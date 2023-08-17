@@ -1,0 +1,11 @@
+version: '3.4'
+name: otus-hw-kafka-env
+
+services:
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    environment:
+      KAFKA_BROKERCONNECT: "host.docker.internal:9095"
+      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
+    ports:
+      - "9000:9000"

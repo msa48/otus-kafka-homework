@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OTUS-HW-Kafka": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
